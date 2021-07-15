@@ -37,6 +37,23 @@
           <option value="SK"> Slovak </option>
         </select>
       </form>
+      <script>
+	      const auth_key = "5652c0b9-adcf-7f2e-f6a2-3a577f700dc9:fx"
+
+        var url = "https://api-free.deepl.com/v2/translate";
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+              console.log(xhr.status);
+              console.log(xhr.responseText);
+          }};
+
+        xhr.send();
+
+      </script>
     </div>
   </body>
 </html>
