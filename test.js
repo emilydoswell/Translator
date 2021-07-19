@@ -17,7 +17,7 @@ submit_button.addEventListener("keydown", () => {
   translationText();
   console.log("finish");
 
-  const response = fetch("https://api-free.deepl.com/v2/translate?auth_key="+auth_key+ "&text="+ text +"&target_lang=es&source_lang=en");
+  const response = fetch("https://api-free.deepl.com/v2/translate?auth_key=" + auth_key + "&text=" + text +"&target_lang=es&source_lang=en");
 
 	console.log(response);
   
