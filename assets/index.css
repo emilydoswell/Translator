@@ -30,6 +30,10 @@ label {
   font-family: 'Roboto', sans-serif;
 }
 
+#translation-output-field {
+  color: white;
+}
+
 #chosen-language {
   width: 30%;
   font-family: 'Roboto', sans-serif;
