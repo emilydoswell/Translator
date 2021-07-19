@@ -7,53 +7,47 @@
   </head>
   <body>
     <div class="page">
+      <h1>Translate text from english into your chosen language</h1>
       <form action="#">
-        <label for="translation">Write your text...</label>
-        <textarea id="translation" name="translation"></textarea>
-        <input class="button-pink" type="submit" value="Submit">
-          <select data-placeholder="Choose a Language...">
+        <label for="input-text-field">Write your text...</label>
+        <br>
+        <textarea id="input-text-field" name="input-text-field"></textarea>
+        <br>
+        <select data-placeholder="Choose a Language..." id="chosen-language" name="chosen-language">
           <option value="BG"> Bulgarian </option>
           <option value="CS"> Czech </option>
           <option value="DA"> Danish </option>
-          <option value="DE"> German </option>
-          <option value="EL"> Greek </option>
-          <option value="EN-US"> English </option>
-          <option value="ES"> Spanish </option>
+          <option value="NL"> Dutch </option>
+          <option value="EN-US"> English (American) </option>
           <option value="ET"> Estonian </option>
           <option value="FI"> Finnish </option>
           <option value="FR"> French </option>
+          <option value="DE"> German </option>
+          <option value="EL"> Greek </option>
           <option value="HU"> Hungarian </option>
           <option value="IT"> Italian </option>
           <option value="JA"> Japanese </option>
-          <option value="LT"> Lithuanian </option>
           <option value="LV"> Latvian </option>
-          <option value="NL"> Dutch </option>
+          <option value="LT"> Lithuanian </option>
           <option value="PL"> Polish </option>
           <option value="PT-PT"> Portuguese (all Portuguese varieties excluding Brazilian Portuguese) </option>
           <option value="PT-BR"> Portuguese (Brazilian) </option>
-          <option value="PT"> Portuguese (unspecified variant for backward compatibility; please select PT-PT or PT-BR instead) </option>
+          <option value="PT"> Portuguese </option>
           <option value="RO"> Romanian </option>
           <option value="RU"> Russian </option>
           <option value="SK"> Slovak </option>
+          <option value="ES"> Spanish </option>
         </select>
+        <br>
+        <input id="submit-button" class="button-pink" type="submit" value="Translate">
+        <br>
       </form>
-      <script>
-	      const auth_key = "5652c0b9-adcf-7f2e-f6a2-3a577f700dc9:fx"
 
-        var url = "https://api-free.deepl.com/v2/translate";
+      <p id="translation-output-field">translation</p>
 
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", url);
-
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4) {
-              console.log(xhr.status);
-              console.log(xhr.responseText);
-          }};
-
-        xhr.send();
-
-      </script>
+      <!-- <textarea type="text" id="translated_message"></textarea> -->
+    
+      <script src="practise.js"></script>
     </div>
   </body>
 </html>
