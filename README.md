@@ -20,4 +20,3 @@ To use the app:
 - Choose the language to translate to
 - Push the translate button
 - Enjoy your translation
-- 
