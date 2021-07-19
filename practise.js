@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
       url_string += "&text=" + word;
     });
     
-    xhr.onreadystatechange = function () {
+    xhr.sendTranslation = function () {
       if (xhr.readyState === 4 && xhr.status === 201){
         const serverResponse = JSON.parse(xhr.response);
 
