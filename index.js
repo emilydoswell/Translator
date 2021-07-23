@@ -27,9 +27,7 @@ const sendTranslation = () => {
     url_string += "&text=" + word;
   });
 
-  console.log(url_string);
-
-  xhr.onload = function () {
+  xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 201){
       const serverResponse = JSON.parse(xhr.response);
   
